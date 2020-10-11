@@ -1,5 +1,6 @@
 import random
 import sys
+import string
 
 class grammatical:
      def vowel_follow_cons(word):
@@ -42,6 +43,8 @@ def main():
 
           print("\nToototabon! My love!") 
           word = input("\nEnter a word... any word... ")
+
+          word = word.casefold()
 
           if word == None or len(word) <= 1:
                sys.exit()
